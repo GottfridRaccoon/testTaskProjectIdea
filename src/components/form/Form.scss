@@ -1,0 +1,98 @@
+
+
+@import "../../../scss/mixins.scss";
+@import "../../../scss/vars.scss";
+@import "../../../scss/templates.scss";
+@import "../../../scss/templates.scss";
+
+%focus{
+	outline: none;
+		
+	&:focus-within{
+		animation: forwards focus 1s;
+	}
+	
+}
+.form__contact{
+	position: sticky;
+	top: 16px;
+	@include rectangleObj(80%,440px);
+	.form__label{
+		padding-top: 16px;
+		margin-bottom: 4px;
+		font-size: 12px;
+		line-height: 13px;
+		letter-spacing: -0.02em;
+		display: inline-block;
+	}
+	
+	padding: 24px;
+
+}
+.form-wrapper{
+	width: 30%;
+
+	&:hover{
+		animation: scale 1s forwards;
+		
+	}
+	min-height: 100%;
+	
+}
+.form__input{
+	@include inputs(90%, 36px);
+
+	@extend %focus;
+}
+
+.form__textarea{
+	@include inputs(90%,108px);
+	resize: none; 
+	font-family: inherit;
+
+	font-size: 14px;
+	@extend %focus;
+}
+.form__input, .form__textarea{
+	padding-left: 25px;
+}
+.form__submit{
+	border: none;
+	border-radius: 10px;
+	margin-top: 24px;
+	height: 36px;
+	width: 100%;
+	color: darken($greys,20);
+	@extend %font;
+	&:active{
+		animation: forwards buttonAnimation .3s;
+	}
+	
+	
+}
+@keyframes buttonAnimation {
+	to{
+		background-color: chartreuse;
+		
+	}
+}
+@keyframes scale {
+	to{
+		transform: scale(1.1,1.01);
+	}
+	
+}
+@keyframes focus{
+	from{
+		border: 1px greenyellow solid;
+	}
+	to{
+		border: 1px red solid;
+	}
+}
+.dot{
+	margin-top: 12px;
+}
+
+
+

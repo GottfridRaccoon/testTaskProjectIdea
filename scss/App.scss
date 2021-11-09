@@ -1,0 +1,41 @@
+@import "./vars.scss";
+
+body {
+	background-color: #e5e5e5;
+
+	color: $color-serif;
+	font-family: "SourceSansPro-Regular";
+
+
+  }
+  
+  h1{
+
+	
+	
+	font-style: bold;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 35px;
+  }
+  h2{
+	font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+  }
+  h3{
+	
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+  }
+  p{
+
+	font-size: 18px;
+	line-height: 20px;
+	font-style: normal;
+font-weight: normal;
+  }

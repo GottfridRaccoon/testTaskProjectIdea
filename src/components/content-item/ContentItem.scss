@@ -1,0 +1,24 @@
+@use 'sass:math';
+@import "../../../scss/mixins.scss";
+
+.content-item-wrapper{
+	max-width: 332px;
+@include contentWrap(100%,423px);
+	.content-item__h3, .content-item__p, .content-item__h2 {
+		
+		padding-left: 16px;
+	}
+	.content-item__h3,.content-item__p{
+		margin-top: 16px;
+	}
+	.content-item__h2{
+		margin-top: 32px;
+	}
+	.content-item__img{
+		width: 100%;
+
+	}
+
+	
+	margin-left: 16px;
+}
